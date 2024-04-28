@@ -1,5 +1,5 @@
 {
-	"id": "Right-Click-Waypoint",
+	"id": "right-click-waypoint",
 	"title": "Right Click Waypoint",
 	"description": "When dragging a ruler allow right click to drop waypoint.",
 	"compatibility": {
