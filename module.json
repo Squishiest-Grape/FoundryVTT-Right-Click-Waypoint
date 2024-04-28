@@ -2,7 +2,6 @@
 	"id": "Right-Click-Waypoint",
 	"title": "Right Click Waypoint",
 	"description": "When dragging a ruler allow right click to drop waypoint.",
-	"version": "1.0.0",
 	"compatibility": {
 		"minimum": "9",
 		"verified": "11"
@@ -19,8 +18,9 @@
 	"changelog": "https://github.com/Squishiest-Grape/FoundryVTT-Right-Click-Waypoint/releases",
 	"license": "https://raw.githubusercontent.com/Squishiest-Grape/FoundryVTT-Right-Click-Waypoint/main/LICENSE",
 	"manifest": "https://raw.githubusercontent.com/Squishiest-Grape/FoundryVTT-Right-Click-Waypoint/main/module.json",
-	"download": "",
 	"url": "https://github.com/Squishiest-Grape/FoundryVTT-Right-Click-Waypoint",
-	"bugs": "https://github.com/Squishiest-Grape/FoundryVTT-Right-Click-Waypoint/issues"
-
+	"bugs": "https://github.com/Squishiest-Grape/FoundryVTT-Right-Click-Waypoint/issues",
+    
+    "version": "1.0.0",
+    "download": "https://github.com/Squishiest-Grape/FoundryVTT-Right-Click-Waypoint/releases/download/v1.0.0/Right-Click-Waypoint.zip"
 }
