@@ -16,6 +16,11 @@
 	],
 	"esmodules": ["main.js"],
 	"readme": "https://raw.githubusercontent.com/Squishiest-Grape/FoundryVTT-Right-Click-Waypoint/main/README.md",
-	"url": "https://github.com/Squishiest-Grape/Foundry-Helper-Macros/tree/main/right_click_waypoint",
-	"manifest": "https://raw.githubusercontent.com/Squishiest-Grape/Foundry-Helper-Macros/main/right_click_waypoint/module.json"
+	"changelog": "https://github.com/Squishiest-Grape/FoundryVTT-Right-Click-Waypoint/releases",
+	"license": "https://raw.githubusercontent.com/Squishiest-Grape/FoundryVTT-Right-Click-Waypoint/main/LICENSE",
+	"manifest": "https://raw.githubusercontent.com/Squishiest-Grape/FoundryVTT-Right-Click-Waypoint/main/module.json",
+	"download": "",
+	"url": "https://github.com/Squishiest-Grape/FoundryVTT-Right-Click-Waypoint",
+	"bugs": "https://github.com/Squishiest-Grape/FoundryVTT-Right-Click-Waypoint/issues"
+
 }
