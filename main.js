@@ -3,9 +3,8 @@ Hooks.once('ready', ()=>{
 });
 
 function right_click_event (event) {
-	console.log(event)
 	const ruler = canvas.controls.ruler;
-	if (!event.ctrlKey && ruler?._state===Ruler.STATES.MEASURING && ruler?.draggedEntity===null) {
+	if (!event.ctrlKey && ruler?._state===Ruler.STATES.MEASURING && ruler.draggedEntity===null) {
 		ruler.waypoints.push(get_point());
 		ruler.labels.addChild(new PreciseText("", CONFIG.canvasTextStyle));
 	}
