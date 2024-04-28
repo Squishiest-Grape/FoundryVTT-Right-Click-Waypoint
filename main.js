@@ -1,39 +1,19 @@
-
-
-Hooks.once("init", () => {
-    hookDragHandlers(Ruler);
+Hooks.once('ready', ()=>{
+	window.addEventListener('contextmenu',right_click_event);
 });
 
-function hookDragHandlers(entityType) {
-	const entityName = entityType.name;
-	libWrapper.register(
-		"right_click_waypoint",
-		`${entityName}.prototype._onDragLeftCancel`,
-		forwardIfUnahndled(onEntityDragLeftCancel),
-		"MIXED",
-	);
+function right_click_event (event) {
+	console.log(event)
+	const ruler = canvas.controls.ruler;
+	if (!event.ctrlKey && ruler?._state===Ruler.STATES.MEASURING && ruler?.draggedEntity===null) {
+		ruler.waypoints.push(get_point());
+		ruler.labels.addChild(new PreciseText("", CONFIG.canvasTextStyle));
+	}
+	return true;
 }
 
-function forwardIfUnahndled(newFn) {
-	return function (oldFn, ...args) {
-		const eventHandled = newFn(...args);
-		if (!eventHandled) oldFn(...args);
-	};
-}
-
-function onEntityDragLeftCancel(event) {
-    if (ruler._state === Ruler.STATES.MEASURING) {
-        const ruler = canvas.controls.ruler;
-	    if (!ruler.draggedEntity || ruler._state === Ruler.STATES.MOVING) return false;
-        const point = getMeasurePosition();
-        ruler.push(new PIXI.Point(point.x, point.y));
-        return true;
-    }
-}
-
-function getMeasurePosition() {
-	const mousePosition = getPointer().getLocalPosition(canvas.tokens);
-	const rulerOffset = canvas.controls.ruler.rulerOffset;
-	const measurePosition = {x: mousePosition.x + rulerOffset.x, y: mousePosition.y + rulerOffset.y};
-	return measurePosition;
+function get_point () {
+	let pos = canvas.app.renderer.events.pointer.getLocalPosition(canvas.tokens);
+	const [x, y] = canvas.grid.getCenter(pos.x, pos.y)
+	return new PIXI.Point(x, y);
 }
