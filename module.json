@@ -14,16 +14,8 @@
 			"discord": "Squishiest_Grape"
 		}
 	],
-	"esmodules": [
-		"src/main.js",
-	],
-	"languages": [
-		{
-			"lang": "en",
-			"name": "English",
-			"path": "lang/en.json"
-		}
-	],
+	"esmodules": ["main.js"],
+	"readme": "https://raw.githubusercontent.com/Squishiest-Grape/FoundryVTT-Right-Click-Waypoint/main/README.md",
 	"url": "https://github.com/Squishiest-Grape/Foundry-Helper-Macros/tree/main/right_click_waypoint",
 	"manifest": "https://raw.githubusercontent.com/Squishiest-Grape/Foundry-Helper-Macros/main/right_click_waypoint/module.json"
 }
