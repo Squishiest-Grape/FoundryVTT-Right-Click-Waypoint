@@ -1,0 +1,29 @@
+{
+	"id": "Right-Click-Waypoint",
+	"title": "Right Click Waypoint",
+	"description": "When dragging a ruler allow right click to drop waypoint.",
+	"version": "1.0.0",
+	"compatibility": {
+		"minimum": "9",
+		"verified": "11"
+	},
+	"authors": [
+		{
+			"name": "Squishiest Grape",
+			"email": "Squishiest.Grape@gmail.com",
+			"discord": "Squishiest_Grape"
+		}
+	],
+	"esmodules": [
+		"src/main.js",
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	],
+	"url": "https://github.com/Squishiest-Grape/Foundry-Helper-Macros/tree/main/right_click_waypoint",
+	"manifest": "https://raw.githubusercontent.com/Squishiest-Grape/Foundry-Helper-Macros/main/right_click_waypoint/module.json"
+}
